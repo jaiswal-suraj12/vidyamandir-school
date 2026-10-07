@@ -1,0 +1,15 @@
+import { Router } from "express";
+import Event from "../models/Event.js";
+import { makeCrudController } from "../controllers/crudController.js";
+import { protect } from "../middleware/authMiddleware.js";
+
+const router = Router();
+const controller = makeCrudController(Event);
+
+router.get("/", controller.list);
+router.get("/:id", controller.get);
+router.post("/", protect, controller.create);
+router.put("/:id", protect, controller.update);
+router.delete("/:id", protect, controller.remove);
+
+export default router;
