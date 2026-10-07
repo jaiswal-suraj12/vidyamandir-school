@@ -7,7 +7,7 @@ export default function AdminLogin() {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("admin@vidhyamandirbajitpur.edu.in");
-  const [password, setPassword] = useState("Admin_baalvidhya25@12Mandir!");
+  const [password, setPassword] = useState("Admin2vidhya25@12Mandir!");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
