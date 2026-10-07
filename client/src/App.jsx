@@ -15,7 +15,7 @@ import { Admissions, Contacts } from "./admin/pages/Inquiries";
 
 
 const API_URL =
-  import.meta.env.VITE_API_URL || "https://vidyamandir-school.onrender.com";
+  import.meta.env.VITE_API_URL || "https://vidyamandir-school.onrender.com/api";
 
 const programs = [
   [
