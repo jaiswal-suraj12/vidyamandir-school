@@ -98,7 +98,7 @@ http://localhost:5000/api/health
 Create a Render Web Service using the repository root as its root directory:
 
 ```text
-Build command: yarn
+Build command: npm install
 Start command: npm start
 ```
 
