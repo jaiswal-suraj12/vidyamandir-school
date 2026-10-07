@@ -12,10 +12,7 @@ import Gallery from "./admin/pages/Gallery";
 import Facilities from "./admin/pages/Facilities";
 import Testimonials from "./admin/pages/Testimonials";
 import { Admissions, Contacts } from "./admin/pages/Inquiries";
-
-
-const API_URL =
-  import.meta.env.VITE_API_URL || "https://vidyamandir-school.onrender.com/api";
+import { API_URL } from "./services/apiBase";
 
 const programs = [
   [

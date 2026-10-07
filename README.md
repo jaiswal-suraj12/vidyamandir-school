@@ -104,8 +104,11 @@ Start command: npm start
 
 The root install runs the backend dependency installation, and the start script
 launches the Express server in `server/`. Set `MONGODB_URI`, `JWT_SECRET`, and
-`CLIENT_URL` in the Render service's environment variables. `CLIENT_URL` should
-be the deployed frontend's origin.
+`CLIENT_URL` in the Render service's environment variables. Set `CLIENT_URL` to
+the deployed frontend's origin without a trailing slash (for example,
+`https://vidyamandir-school.vercel.app`). The frontend's `VITE_API_URL` should
+be the Render API URL, with or without the `/api` suffix; the frontend
+normalizes it to the API root.
 
 ## API overview
 

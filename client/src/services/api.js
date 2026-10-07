@@ -1,5 +1,4 @@
-const API_URL =
-  import.meta.env.VITE_API_URL || "https://vidyamandir-school.onrender.com";
+import { API_URL } from "./apiBase";
 
 async function request(path, options = {}) {
   const token = localStorage.getItem("abvm_token");

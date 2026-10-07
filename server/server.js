@@ -15,7 +15,8 @@ import contactRoutes from "./routes/contactRoutes.js";
 dotenv.config();
 const app = express();
 
-app.use(cors({ origin: process.env.CLIENT_URL || "http://localhost:5173" }));
+const clientUrl = (process.env.CLIENT_URL || "https://vidyamandir-school.vercel.app/").replace(/\/+$/, "");
+app.use(cors({ origin: clientUrl }));
 app.use(express.json({ limit: "2mb" }));
 
 app.get("/api/health", (_req, res) => {
