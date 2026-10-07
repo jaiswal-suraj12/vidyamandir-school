@@ -93,6 +93,20 @@ Health check:
 http://localhost:5000/api/health
 ```
 
+## Deploy the API to Render
+
+Create a Render Web Service using the repository root as its root directory:
+
+```text
+Build command: yarn
+Start command: npm start
+```
+
+The root install runs the backend dependency installation, and the start script
+launches the Express server in `server/`. Set `MONGODB_URI`, `JWT_SECRET`, and
+`CLIENT_URL` in the Render service's environment variables. `CLIENT_URL` should
+be the deployed frontend's origin.
+
 ## API overview
 
 Public:
