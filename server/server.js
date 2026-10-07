@@ -15,7 +15,7 @@ import contactRoutes from "./routes/contactRoutes.js";
 dotenv.config();
 const app = express();
 
-const clientUrl = (process.env.CLIENT_URL || "https://vidyamandir-school.vercel.app/").replace(/\/+$/, "");
+const clientUrl = (process.env.CLIENT_URL || "https://vidyamandir-school.vercel.app").replace(/\/+$/, "");
 app.use(cors({ origin: clientUrl }));
 app.use(express.json({ limit: "2mb" }));
 
