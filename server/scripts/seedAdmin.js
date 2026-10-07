@@ -6,7 +6,7 @@ import Admin from "../models/Admin.js";
 dotenv.config();
 
 const email = process.env.ADMIN_EMAIL || "admin@vidhyamandirbajitpur.edu.in";
-const password = process.env.ADMIN_PASSWORD || "Admin_baalvidhya25@12Mandir!";
+const password = process.env.ADMIN_PASSWORD ||"Admin_baalvidhya25@12Mandir! ";
 
 await connectDB();
 
